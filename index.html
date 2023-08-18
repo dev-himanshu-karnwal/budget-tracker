@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <section class="summary_section">
+    <div class="balance_block">
+      BALANCE <span class="balance">₹0</span>
+    </div>
+    <div class="income_block">
+      INCOMES <span class="income">₹0</span>
+    </div>
+    <div class="expense_block">
+      EXPENSES <span class="expense">₹0</span>
+    </div>
+  </section>
+
+  <section class="add_transaction_section">
+    <div class="add_transaction_container">
+      <h1 class="add_transaction_heading">ADD NEW TRANSACTION</h1>
+
+      <form class="add_transaction_form">
+
+        <div class="add_transaction_details">
+
+          <div class="add_transaction_details_block1">
+            Type of Transaction:
+          </div>
+          <div class="add_transaction_details_block2">
+            <label for="income">
+              <input type="radio" id="income" name="type" value="income" class="type" checked>
+              Income
+            </label>
+            <br>
+            </label>
+            <label for="expense">
+              <input type="radio" id="expense" name="type" value="expense" class="type">
+              Expense
+            </label>
+          </div>
+
+          <div class="add_transaction_details_block3 ">
+            Description:&nbsp;
+            <label for="description">
+
+              <input type="text" id="description">
+            </label>
+            <br>
+
+            Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="amount">
+              <input type="number" name="amount" id="amount" placeholder="In ₹">
+            </label>
+          </div>
+        </div>
+
+        <div class="add_transaction_buttons">
+
+          <button type="reset" class="reset_button">Reset Form</button>
+          <button type="submit" class="submit_button">Add to Transactions</button>
+
+        </div>
+
+      </form>
+
+
+    </div>
+  </section>
+
+
+  <section class="show_transactions_section">
+    <div class="show_incomes_block hidden">
+      <span class="show_transactions_heading"><u>INCOMES</u></span>
+      <table>
+        <thead>
+          <tr>
+            <th class="h1">Sr. No.</th>
+            <th class="h2">Description</th>
+            <th class="h3">Amount</th>
+          </tr>
+        </thead>
+
+        <tbody class="all_incomes">
+          <!-- <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr>
+          <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr>
+          <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="show_expenses_block hidden">
+      <span class="show_transactions_heading"><u>EXPENSES</u></span>
+      <table>
+        <thead>
+          <tr>
+            <th class="h1">Sr. No.</th>
+            <th class="h2">Description</th>
+            <th class="h3">Amount</th>
+          </tr>
+        </thead>
+
+        <tbody class="all_expenses">
+          <!-- <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr>
+          <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr>
+          <tr>
+            <td class="serial_no">1</td>
+            <td>Salary Received</td>
+            <td>1000000 </td>
+          </tr> -->
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('istockphoto-528219721-612x612.jpg');
+  color: white;
+  font-family: cursive;
+  opacity: 0;
+  transition: all 3s;
+}
+
+.summary_section {
+  background-color: black;
+  margin: 13px 200px;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+.balance_block,
+.income_block,
+.expense_block {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+
+.balance_block {
+  font-size: 30px;
+  /* background-color: blue; */
+  color: #6096ff;
+}
+
+.income_block {
+  /* background-color: green; */
+  color: lightgreen;
+}
+
+.expense_block {
+  /* background-color: red; */
+  color: red;
+}
+
+.add_transaction_section {
+  background-color: black;
+  margin: 50px 200px 34px 200px;
+  border-radius: 60px;
+  font-size: larger;
+}
+
+.add_transaction_details {
+  display: flex;
+  flex-direction: row;
+}
+
+.add_transaction_details_block1 {
+  margin: 30px;
+}
+
+.add_transaction_details_block2 {
+  margin: 20px;
+  line-height: 42px;
+}
+
+.add_transaction_details_block3 {
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.add_transaction_heading {
+  width: 800px;
+  background-color: aqua;
+  text-align: center;
+  color: black;
+  margin: auto;
+  border-radius: 0px 50px;
+}
+
+.add_transaction_buttons {
+  display: flex;
+  padding: 0px 30px 10px 0px;
+  justify-content: space-evenly;
+}
+
+.reset_button {
+  font-size: 15px;
+  padding: 0px 5px;
+  border: 3px solid blue;
+  border-radius: 100px;
+  align-items: center;
+  cursor: pointer;
+  background-color: skyblue;
+}
+
+.submit_button {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 3px solid blue;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: skyblue;
+}
+
+label[for="income"],
+label[for="expense"] {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"] {
+
+  width: 287px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  margin-left: 4px;
+}
+
+.show_transactions_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 27px;
+  font-size: 20px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #3f8fdd;
+  color: black;
+}
+
+tbody {
+  text-align: left;
+}
+
+.show_transactions_heading {
+  font-size: 30px;
+  font-weight: 900;
+  color: cornsilk;
+}
+
+.h1 {
+  width: 90px;
+}
+
+.h2 {
+  width: 360px;
+}
+
+.h3 {
+  width: 160px;
+}
+
+td,
+th {
+  border: black solid 4px;
+}
+
+td {
+  padding: 5px;
+}
+
+.serial_no {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.amt {
+  text-align: right;
+}
